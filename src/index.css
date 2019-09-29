@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.name {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.delete-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.arrow-icon:hover,
+.delete-icon:hover {
+  cursor: pointer;
+}
+
+.delete-icon {
+  float: right;
+}

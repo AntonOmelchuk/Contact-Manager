@@ -12,9 +12,28 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #6d6e70;
+}
+
+.header {
+  padding-left: 45px;
+  padding-right: 90px;
+}
+
 .name {
   font-size: 21px;
   font-weight: 600;
+}
+
+.contact-item,
+.header-link {
+  padding-left: 7px;
 }
 
 .arrow-icon {

@@ -17,14 +17,14 @@ const Contact = ({id, name, email, phone, deleteItem}) => {
         <ListGroup key={id} className='mt-4'>
             <ListGroupItem>
                     <div className='name'>
-                        {name}<img className='arrow-icon' alt='arrow-icon' src={isOpen? up : down} onClick={() => setIsOpen(!isOpen)} />
+                        {name}<img className='arrow-icon' alt='arrow-icon' src={isOpen? down : up} onClick={() => setIsOpen(!isOpen)} />
                         <img src={del} alt='delete-icon' className='delete-icon' onClick={() => deleteContact(id)} />
                 </div>
             </ListGroupItem>
             {isOpen ? null :
                 <>
-                <ListGroupItem>{email}</ListGroupItem>
-                <ListGroupItem>{phone}</ListGroupItem>
+                    <ListGroupItem><i className="fas fa-envelope" /><span className='contact-item'>{email}</span></ListGroupItem>
+                    <ListGroupItem><i className="fas fa-mobile-alt" /><span className='contact-item'>{phone}</span></ListGroupItem>
                 </>}
         </ListGroup>
     )

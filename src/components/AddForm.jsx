@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Button, Form} from "react-bootstrap";
 import {connect} from "react-redux";
 import {addContact} from "../actions/contactActions";
-import uuid from 'uuid';
 import {Redirect} from "react-router-dom";
 
 const AddForm = ({addContact}) => {
@@ -17,8 +16,7 @@ const AddForm = ({addContact}) => {
         const newContact = {
             name: name,
             email: email,
-            phone: phone,
-            id: uuid()
+            phone: phone
         };
         addContact(newContact);
         setName('');

@@ -1,18 +1,28 @@
-import {ADD_CONTACT, DELETE_CONTACT} from "../actions/types";
-import uuid from 'uuid';
+import {ADD_CONTACT, DELETE_CONTACT, GET_ITEMS} from "../actions/types";
+import * as uuid from "uuid";
 
-let initialState = [
-    {id: uuid(), name: 'Max Makintosh', email: 'makintosh_kg@ukr.net', phone: '+38(098) 444 44 44'},
-    {id: uuid(), name: 'Vlad Sherbyna', email: 'Sherbyna@ukr.net', phone: '+38(098) 444 44 22'},
-    {id: uuid(), name: 'Ilya Rybachuk', email: 'Rybachuk@ukr.net', phone: '+38(098) 444 44 11'}
-];
+let initialState = {
+    contacts:[
+        {id: uuid(), name: 'Max Makintosh', email: 'makintosh_kg@ukr.net', phone: '+3(098)111 11 11'}
+    ]
+};
 
 const contactReducer = (state = initialState, action) => {
     switch(action.type) {
+        case GET_ITEMS:
+            return {
+                ...state
+            };
         case DELETE_CONTACT:
-            return state.filter(i => i.id !== action.id);
+            return {
+                ...state,
+                contacts: state.contacts.filter(i => i.id !== action.payload)
+            };
         case ADD_CONTACT:
-            return [...state, action.contact];
+            return {
+                ...state,
+                contacts: [...state.contacts, action.payload]
+            };
         default:
             return state
     }

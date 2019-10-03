@@ -8,6 +8,7 @@ import About from "./components/About";
 import NotFound from "./components/NotFound";
 
 const App = () => {
+
     return (
         <div>
             <Header/>
@@ -23,4 +24,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default (App);

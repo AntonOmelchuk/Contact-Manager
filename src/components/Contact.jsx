@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {ListGroup, ListGroupItem} from "react-bootstrap";
 import down from '../assets/arrow-down.png';
 import up from '../assets/arrow-up.png';
-import edit from '../assets/edit.png';
 import {NavLink} from "react-router-dom";
 
 const Contact = ({id, name, email, phone, deleteItem}) => {

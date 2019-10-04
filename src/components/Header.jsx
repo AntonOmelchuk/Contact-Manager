@@ -14,9 +14,9 @@ const Header = () => {
                     <Nav.Link><NavLink to="/contacts/add"><i className="fas fa-user-plus" /><span className='header-link'>Add</span></NavLink></Nav.Link>
                     <Nav.Link><NavLink to="/about"><i className="fas fa-question" /><span className='header-link'>About</span></NavLink></Nav.Link>
                     <NavDropdown title="Contacts" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">GitHub</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Instagram</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">LinkedIn</NavDropdown.Item>
+                        <NavDropdown.Item href='https://github.com/AntonOmelchuk' target='_blank'>GitHub</NavDropdown.Item>
+                        <NavDropdown.Item href='https://www.instagram.com/ztxtct' target='_blank'>Instagram</NavDropdown.Item>
+                        <NavDropdown.Item href='https://www.linkedin.com/in/антон-омельчук-4b5a00159' target='_blank'>LinkedIn</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="#action/3.4">+38(098) 920 18 55</NavDropdown.Item>
                     </NavDropdown>

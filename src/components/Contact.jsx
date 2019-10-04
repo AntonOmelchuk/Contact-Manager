@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import {ListGroup, ListGroupItem} from "react-bootstrap";
 import down from '../assets/arrow-down.png';
 import up from '../assets/arrow-up.png';
-import del from '../assets/cross.png';
+import edit from '../assets/edit.png';
+import {NavLink} from "react-router-dom";
 
 const Contact = ({id, name, email, phone, deleteItem}) => {
 
@@ -18,7 +19,10 @@ const Contact = ({id, name, email, phone, deleteItem}) => {
             <ListGroupItem>
                     <div className='name'>
                         {name}<img className='arrow-icon' alt='arrow-icon' src={isOpen? down : up} onClick={() => setIsOpen(!isOpen)} />
-                        <img src={del} alt='delete-icon' className='delete-icon' onClick={() => deleteContact(id)} />
+                        <i className='fas fa-user-times' onClick={() => deleteContact(id)} />
+                        <NavLink to={`/edit/${id}`}>
+                            <i className='fas fa-user-edit' />
+                        </NavLink>
                 </div>
             </ListGroupItem>
             {isOpen ? null :

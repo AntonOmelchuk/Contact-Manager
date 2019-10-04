@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: #ccc;
 }
 
 code {
@@ -17,8 +19,10 @@ a {
   color: #fff;
 }
 
-a:hover {
+a:hover,
+.fas:hover {
   color: #6d6e70;
+  cursor: pointer;
 }
 
 .header {
@@ -41,9 +45,20 @@ a:hover {
   height: 30px;
 }
 
-.delete-icon {
+.fa-user-edit {
+  color: #333;
+  margin-right: 9px;
+}
+
+.fa-user-times,
+.fa-user-edit {
   width: 25px;
   height: 25px;
+  float: right;
+}
+
+.fa-user-times:hover {
+  color: red;
 }
 
 .arrow-icon:hover,
@@ -51,6 +66,3 @@ a:hover {
   cursor: pointer;
 }
 
-.delete-icon {
-  float: right;
-}

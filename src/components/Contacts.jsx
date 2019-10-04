@@ -7,7 +7,7 @@ const Contacts = ({deleteContact, getContacts, contacts}) => {
 
     useEffect(() => {
         getContacts()
-    }, [Contact]);
+    }, []);
 
     return (
         <>

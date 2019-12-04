@@ -1,4 +1,4 @@
-import {ADD_CONTACT, DELETE_CONTACT, GET_CONTACT, GET_CONTACTS, UPDATE_CONTACT} from "../actions/types";
+import {ADD_CONTACT, DELETE_CONTACT, GET_CONTACT, GET_CONTACTS, UPDATE_CONTACT} from '../actions/types';
 
 let initialState = {
     contacts:[],

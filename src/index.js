@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 import store from './store';
-import {Provider} from "react-redux";
-import {BrowserRouter} from "react-router-dom";
+import {Provider} from 'react-redux';
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -16,4 +15,3 @@ ReactDOM.render(
     </BrowserRouter>, document.getElementById('root')
 );
 
-serviceWorker.unregister();
